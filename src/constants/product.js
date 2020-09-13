@@ -1,5 +1,5 @@
 /**
- * According to the mock data, there are four prodct types
+ * According to the mock-products.json, there are four product types
  */
 export const PRODUCT_TYPE = {
   BEER: "Beer",
