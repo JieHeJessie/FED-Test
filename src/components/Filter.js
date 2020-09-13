@@ -48,9 +48,7 @@ const Filter = ({ currenFilterType, filterProducts }) => {
           onChange={handleFilterChange}
           label="Product Filter"
         >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
+          <MenuItem value="all">All Products</MenuItem>
           {Object.keys(PRODUCT_TYPE).map((key) => (
             <MenuItem value={PRODUCT_TYPE[key]} key={key}>
               {PRODUCT_TYPE[key]}

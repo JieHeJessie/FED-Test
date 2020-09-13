@@ -22,9 +22,10 @@ const Products = ({ products, currenFilterType, getAllProdcuts }) => {
   }, []);
 
   //render products based on filtering type
-  const items = !!currenFilterType
-    ? products.filter((item) => item.type === currenFilterType)
-    : products;
+  const items =
+    currenFilterType === "all"
+      ? products
+      : products.filter((item) => item.type === currenFilterType);
 
   return (
     <GridContainer container>

@@ -3,7 +3,7 @@ import update from "immutability-helper";
 
 export const initialState = {
   products: [],
-  currenFilterType: ""
+  currenFilterType: "all"
 };
 
 export const productsReducer = (state = initialState, action) => {
