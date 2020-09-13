@@ -43,7 +43,7 @@ const Filter = ({ currenFilterType, filterProducts }) => {
         <InputLabel id="produc-filter-label">Product Filter</InputLabel>
         <Select
           labelId="produc-filter-label"
-          id="product-filter"
+          data-testid="product-filter"
           value={currenFilterType}
           onChange={handleFilterChange}
           label="Product Filter"
@@ -52,7 +52,9 @@ const Filter = ({ currenFilterType, filterProducts }) => {
             <em>None</em>
           </MenuItem>
           {Object.keys(PRODUCT_TYPE).map((key) => (
-            <MenuItem value={PRODUCT_TYPE[key]}>{PRODUCT_TYPE[key]}</MenuItem>
+            <MenuItem value={PRODUCT_TYPE[key]} key={key}>
+              {PRODUCT_TYPE[key]}
+            </MenuItem>
           ))}
         </Select>
       </Dropdown>

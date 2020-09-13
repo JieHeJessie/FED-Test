@@ -13,9 +13,10 @@ export const initSagas = (sagaMiddleware) => {
   Object.values(rootSaga).forEach(sagaMiddleware.run.bind(sagaMiddleware));
 };
 
-export default () => {
+export default (initialState) => {
   const store = createStore(
     rootReducer,
+    initialState,
     composeWithDevTools(applyMiddleware(sagaMiddleware))
   );
   initSagas(sagaMiddleware);
