@@ -1,6 +1,6 @@
 # Products Application
 
-This is a frontend application for viewing prodcucts. In this application, as a user, they can see a range of products and filter products based on the product type.
+This is a frontend application for viewing prodcucts. In this application, as a user, he/she can see a range of products and filter products based on the product type.
 
 For more details, please refer to [instructions](instructions.md)
 
