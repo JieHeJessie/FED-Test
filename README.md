@@ -42,6 +42,8 @@ products-app
 
 ## Command Lines
 
+- `git clone https://github.com/JieHeJessie/products-app` clones the project
+- `cd products-app` navigates to the corresponding file
 - `npm install` installs dependencies.
 - `npm start` is for running the application
 - `npm test` is for unit testing.
