@@ -1,0 +1,15 @@
+node_modules/
+coverage/
+build/
+npm-debug.log
+.DS_Store
+.todo
+.idea
+package-lock.json
+app/dist/*
+app/build/*
+*.iml
+.vscode
+coverage/
+docs/
+commitlint.config.js
