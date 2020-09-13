@@ -1,12 +1,12 @@
 import * as ActionTypes from "redux/actions/actionTypes";
 import update from "immutability-helper";
 
-const initialState = {
+export const initialState = {
   products: [],
   currenFilterType: ""
 };
 
-const productsReducer = (state = initialState, action) => {
+export const productsReducer = (state = initialState, action) => {
   switch (action.type) {
     case ActionTypes.GET_ALL_PRODUCTS_SUCCESS:
       return update(state, {
@@ -21,5 +21,3 @@ const productsReducer = (state = initialState, action) => {
     }
   }
 };
-
-export default productsReducer;
