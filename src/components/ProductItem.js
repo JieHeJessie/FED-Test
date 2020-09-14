@@ -18,7 +18,8 @@ const CardContainer = styled(Card)`
   }
 `;
 const ProductImg = styled.img`
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   height: 320px;
 `;
 const SalesContainer = styled.div`
